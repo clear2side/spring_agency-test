@@ -1,0 +1,13 @@
+extends ./modules/_head
+block variables
+  - var title = 'Home page'
+block content
+  .index__wrap {{ message }}
+  
+  script.
+    new Vue({
+        el: '.index__wrap',
+        data: {
+          message: "Hello VUE!!!"
+        }
+    })

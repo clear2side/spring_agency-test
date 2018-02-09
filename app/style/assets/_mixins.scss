@@ -1,0 +1,60 @@
+/* variables*/
+$c-text: #5B5B67;
+
+/* clearfix */
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+//  @extend %clearfix;
+@mixin desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+// html
+//   font-size: 16px
+//   @include desktop
+//     font-size: 16px
+//   @include laptop 
+//     font-size: 15px
+//   @include tablet 
+//     font-size: 14px
+//   @include phone
+//     font-size: 13px
+
+
+/* px to rem*/
+$baseFontSize: 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
