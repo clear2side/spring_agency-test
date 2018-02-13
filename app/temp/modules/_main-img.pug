@@ -1,0 +1,12 @@
+.main__img
+  .main__img__title-wrap
+    .main__img--title.main__img--title__main <b>Visit Poz</b><i>nAN</i>
+    .main__img--title.main__img--title__second <b>a city on the</b> <i>Warta</i> <b>river in west-central</b> <i>Poland</i><b>, the region called</b> <i>Greater Poland.</i>
+  ul.main__img__people--list
+    each pipe in people
+      li.main__img__people--item
+        .main__img__people--item__img
+          img(src="../../img/" + pipe.person + ".png", alt="")
+        .main__img__people--item__text
+          p.cope_text.line-clamp= pipe.recal
+          p= pipe.identify  

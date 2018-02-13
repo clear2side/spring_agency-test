@@ -1,5 +1,28 @@
 header.header
-  .header__logo
-    +icon('smile')
-
-  
+  .header__top
+    .header__logo 
+      <b>poz</b><i>nan</i><b>- city</b><i>2</i><b>live</b>
+    ul.header__soc--list
+      li.header__soc--item
+        a.header__soc--link
+          +icon('evernote')
+      li.header__soc--item
+        a.header__soc--link
+          +icon('twitter-bird')
+      li.header__soc--item
+        a.header__soc--link
+          +icon('pinterest')
+      li.header__soc--item
+        a.header__soc--link
+          +icon('linked-in')
+      li.header__soc--item
+        a.header__soc--link
+          +icon('facebook')
+      li.header__soc--item
+        a.header__soc--link
+          +icon('delicious')
+  .header__bottom
+    ul.header__menu--list        
+      each menuItem in ['home','product','services','contact']
+        li.header__menu--item
+          a.header__menu--link= menuItem

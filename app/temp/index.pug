@@ -2,12 +2,9 @@ extends ./modules/_head
 block variables
   - var title = 'Home page'
 block content
-  .index__wrap {{ message }}
-  
-  script.
-    new Vue({
-        el: '.index__wrap',
-        data: {
-          message: "Hello VUE!!!"
-        }
-    })
+  .content__wrapper
+    include ./modules/_header
+    include ./modules/_main-img
+    include ./modules/_aside
+    include ./modules/_content
+  include ./modules/_footer

@@ -19,11 +19,8 @@ html(lang='en')
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     <![endif]-->
   body
-    include ./_mixin
-    .content__wrapper
-      include ./_header
-      block content
-    include ./_footer
+    include ./_mixin  
+    block content
     svg.hide__svg
-        include ./../../symbol/sprite.svg
+      include ./../../symbol/sprite.svg
     script(src='./js/main.js')

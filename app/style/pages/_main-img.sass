@@ -1,0 +1,74 @@
+.main__img
+  position: relative
+  height: 435px
+  padding-top: 90px
+  border-top: 3px solid $c-cyan
+  background-image: url('./../../img/main-img.png')
+  background-repeat: no-repeat
+  background-size: cover
+
+.main__img__title-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+.main__img--title
+  display: block
+  font-family: 'gothic'
+  text-transform: uppercase
+  margin: auto
+  background: rgba(white, .8)
+
+.main__img--title__main
+  font-size: 60px
+  padding: 5px 30px
+  margin-bottom: 20px
+
+.main__img--title__second
+  font-size: 30px
+  padding: 5px
+
+.main__img__people--list
+  display: flex
+  position: absolute
+  justify-content: space-around
+  align-items: center
+  bottom: 0
+  width: 100%
+  height: 121px
+  background-color: rgba(black, .5)
+
+.main__img__people--list
+
+.main__img__people--item
+  position: relative
+  height: 69px
+  width: 154px
+  background-color: #fff
+
+.main__img__people--item__img,
+.main__img__people--item__text
+  display: inline-block
+  vertical-align: middle 
+
+.main__img__people--item__img
+  height: 100%
+  position: absolute
+  transform: translateX(-50%) scale(1.05)
+  
+.main__img__people--item__text
+  font-size: 9px
+  margin: 10px 6px 0 50px
+  p
+    font-family: arial
+    color: #515151
+  p:first-child
+    font-style: italic
+    font-weight: 600
+    margin-bottom: 5px
+    text-overflow: ellipsis
+    overflow: hidden
+  p:last-child
+    font-style: normal
+    font-weight: 400
