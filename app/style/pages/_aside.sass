@@ -1,0 +1,111 @@
+.aside
+  float: left
+  width: 232px
+  padding-left: 35px
+  border-right: 1px dotted $c-dotted
+  border-top: 3px solid $c-cyan
+
+.about__author
+  padding-top: 30px
+  border-bottom: 1px dotted $c-dotted
+  padding-bottom: 15px
+  padding-right: 15px
+
+.about__author--title
+  margin-bottom: 8px
+
+.about__author--text
+  b
+    font-weight: bold
+
+.related__post
+  padding-top: 17px
+  padding-bottom: 25px
+  border-bottom: 1px dotted $c-dotted
+
+.related__post--title
+  margin-bottom: 8px
+
+.related__post--item
+  height: 40px
+  margin-bottom: 10px
+  &:last-child
+    margin-bottom: 0
+
+.related__post--item__img,
+.related__past--item__content
+  display: inline-block
+  vertical-align: middle
+
+.related__post--item__img
+  height: 100%
+  border: 1px solid $c-dotted
+
+.related__past--item__content
+  margin-left: 20px
+
+.related__past--item__content--title
+  font-size: 10px
+  font-weight: bold
+  text-transform: uppercase
+
+.related__past--item__content__comment--icon
+  display: inline-block
+  vertical-align: middle
+  height: 16px
+  width: 17px
+  svg
+    fill: #dddddd
+
+.related__past--item__content__comment
+  &:hover
+    cursor: pointer
+    .related__past--item__content__comment--count
+      text-decoration: underline
+    svg
+      fill: grey
+
+.related__past--item__content__comment--count
+  font-size: 10px
+  display: inline-block
+  vertical-align: middle
+
+.currency
+  padding-top: 22px
+  padding-bottom: 45px  
+  border-bottom: 1px dotted $c-dotted  
+
+.currency--title
+  margin-bottom: 7px
+
+.currency__table
+  font-size: 10px
+  th, td
+    height: 19px
+    width: 39px
+    text-align: center
+    vertical-align: middle
+  th
+    background-color: $c-blue
+    color: white
+  td
+    background-color: #90d4f5
+    color: $c-blue
+  .arrow__up
+    svg
+      height: 12px
+      width: 15px
+      fill: #079f4b
+  .arrow__down
+    svg
+      height: 12px
+      width: 15px
+      fill: #9f0707
+      -moz-transform: scale(1,-1);
+      -webkit-transform: scale(1, -1);
+      -o-transform: scale(1, -1);
+      transform: scale(1, -1);
+      filter: FlipV;
+      -ms-filter: "FlipV"; 
+
+

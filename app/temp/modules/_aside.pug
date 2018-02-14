@@ -1,1 +1,44 @@
-.aside aside connect
+.aside
+  .about__author
+    .title.about__author--title about author
+    .text.about__author--text <b>John Doe</b> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.
+  .related__post
+    .title.related__post--title related post
+    ul.related__post--list
+      each post in posts
+        li.related__post--item
+          .related__post--item__img
+            img(src="./../../img/" + post.image + ".png", alt="")
+          .related__past--item__content
+            .related__past--item__content--title= post.title
+            a.related__past--item__content__comment
+              .related__past--item__content__comment--icon
+                +icon('speech-bubbles-kopia-2')
+              .related__past--item__content__comment--count #{post.count} Comments
+  .currency
+    .title.currency--title currency
+    table.currency__table
+      tr
+        th Date
+        th Value
+        th Status
+        th Diff
+      tr
+        td 22.1
+        td 459.5
+        td.arrow__up 
+          +icon('arrow-head')
+        td +1.0
+      tr
+        td 21.1
+        td 448.5
+        td.arrow__down
+          +icon('arrow-head')        
+        td -2.3
+      tr
+        td 20.1
+        td 450.8
+        td.arrow__up
+          +icon('arrow-head')          
+        td +8.0
+        
