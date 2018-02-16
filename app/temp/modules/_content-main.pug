@@ -1,4 +1,58 @@
 .content-main
-  .why-should
-    .title.why-should--title why should you come to poznan
-  
+  .user
+    .title.user--title why should you come to poznan
+    .user-info
+      .user-info__ava
+        .user-info__ava--date 11 Nov <br>2013
+        .user-info__ava--name by <br>John Doe
+      .user-info__more
+        .text.user-info__more--text.
+          Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio  em nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla. <br>Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla... 
+        button.text.user-info__more--buttom read more
+      .user__patch
+        button
+          +icon('thumb-up-kopia')
+          span 10 likes
+        button 
+          +icon('speech-bubbles-kopia-2')
+          span 22 comments
+  .news
+    .news--list
+      .news--item
+        .news--item__content
+          .news__head
+            .title.news--item__content--title new attractions
+            .news--item__content__author 
+              span Posted by &nbsp;
+              a(href="#") John Doe &nbsp;
+              span on &nbsp;  
+              a(href="#") 10 Nov 2013
+          .news--item--text 
+            .text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. 
+            a(class='news--item--link' href="#") more...
+        .news--item__reviews
+          button
+            +icon('thumb-up-kopia')
+            span 12
+          button
+            +icon('speech-bubbles-kopia-2')
+            span 34
+      .news--item.convex-shadow
+        .news--item__content
+          .news__head
+            .title.news--item__content--title let's meet on lld market square it will be fun
+            .news--item__content__author 
+              span Posted by &nbsp;
+              a(href="#") John Doe &nbsp;
+              span on &nbsp;
+              a(href="#") 09 Nov 2013
+          .news--item--text 
+            .text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis.eget... 
+            a(class='news--item--link' href="#") more...
+        .news--item__reviews
+          button
+            +icon('thumb-up-kopia')
+            span 56
+          button
+            +icon('speech-bubbles-kopia-2')
+            span 55

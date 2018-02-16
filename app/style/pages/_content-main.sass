@@ -1,13 +1,181 @@
 .content-main
   width: calc(100% - 232px)
-  padding-right: 36px
+  padding-right: 27px
+  float: left
+  border-top: 3px solid $c-cyan
+  
+.user
+  transform: translateY(-9px)
+  background: white
+  border-top: 3px solid $c-cyan
+  border-bottom: 1px dotted $c-dotted
+  border-right: 1px dotted $c-dotted
+  position: relative
+  padding: 25px 0 23px 14px
+  z-index: 2
+
+.user-info
+  position: relative
+  @include clearfix
+
+.user--title
+  font-size: 32px
+  margin-bottom: 6px
+
+.user-info__ava, .user-info__more
   float: left
 
-.why-should
-  border-top: 3px solid $c-cyan
-  // transform: translateY(-20px)
-  position: relative
-  padding: 30px 0 20px 14px
+.user-info__ava
+  width: 110px
 
-.why-should--title
-  font-size: 32px
+.user-info__more
+  width: calc(100% - 110px)
+  padding-left: 28px
+
+.user-info__ava--date, .user-info__ava--name
+  display: flex
+  float: left
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-size: 8px
+  height: 50px
+  width: 50px
+  border-radius: 50px
+  background-color: #22aaec
+  color: white
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
+
+.user-info__ava--name
+  background-image: url('./../../img/user-male-icon.png')
+  background-size: cover
+
+.text.user-info__more--text
+  margin-bottom: 25px
+
+.text.user-info__more--buttom
+  background: linear-gradient(to bottom, #0881af, #045279)
+  padding: 3px 12px 0px 12px
+  color: white
+  border: 1px solid $c-blue
+  box-shadow: inset 0 1px 0 rgba(white, .25), 0 3px 0 black
+  &:hover
+    background: linear-gradient(to top, #0881af, #045279)
+    
+.user__patch
+  position: absolute
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 25px
+  line-height: 25px
+  width: 179px
+  right: -7px
+  bottom: -3px
+  padding-left: 7px
+  background-color: #90d4f5
+  button
+    &:hover
+      svg
+        fill: $c-blue
+    svg
+      height: 16px
+      width: 16px
+      fill: white
+      vertical-align: middle
+    span
+      font-size: 10px
+      color: #076e9f
+      margin-left: 5px
+    &:hover
+      span
+        color: $c-blue  
+  &:after
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -6px;
+    height: 6px;
+    width: 6px;   
+    background: linear-gradient(135deg, $c-blue, 50%, orangered, 50%, white, white );
+  
+.user__patch--text
+  display: inline-block
+  vertical-align: middle
+  color: $c-blue
+  font-size: 10px
+  line-height: 17px
+  margin: auto
+
+.news
+  padding: 10px 0 13px 13px
+
+.news--list
+  display: flex
+  justify-content: space-between
+
+.news--item
+  display: inline-block
+  width: calc(50% - 5px)
+
+.news--item__content
+  display: flex
+  height: 100%
+  flex-direction: column
+  background-color: #eaeaea
+  padding: 27px 67px 0px 30px
+  border-radius: 15px 0 0 0 
+
+.news__head
+  padding-right: 42px
+
+.news--item__content--title
+  line-height: .99
+
+.news--item--text
+  width: 100%
+  margin: auto
+
+.news--item__content__author
+  font-size: 10px
+  a
+    color: $c-blue
+    &:hover
+      text-decoration: underline
+  span
+    color: #878787
+
+.news--item--link
+  font-size: 10px
+  color: $c-blue
+  &:hover
+
+.news--item__reviews
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  background-color: #f4f3f3
+  padding-right: 13px
+  height: 31px
+  margin-top: -9px
+  button
+    display: inline-block
+    margin-left: 13px
+    &:hover
+      svg
+        fill: $c-blue
+    svg
+      height: 16px
+      width: 16px
+      fill: white
+      vertical-align: middle
+      fill: #90d4f5
+    span
+      font-size: 10px
+      color: $c-blue
+      margin-left: 5px
+    &:hover
+      span
+        color: $c-blue  
