@@ -110,14 +110,14 @@
   margin: auto
 
 .news
-  padding: 10px 0 13px 13px
+  padding: 10px 0 35px 13px
+  border-bottom: 1px dotted $c-dotted
 
 .news--list
   display: flex
   justify-content: space-between
 
 .news--item
-  display: inline-block
   width: calc(50% - 5px)
 
 .news--item__content
@@ -129,7 +129,7 @@
   border-radius: 15px 0 0 0 
 
 .news__head
-  padding-right: 42px
+  padding-right: 50px
 
 .news--item__content--title
   line-height: .99
@@ -178,4 +178,14 @@
       margin-left: 5px
     &:hover
       span
-        color: $c-blue  
+        color: $c-blue
+
+.news__add
+  display: flex
+  height: 81px
+  margin-top: 50px
+  background-color: #eaeaea
+
+.news__add--content
+  font-size: 12px
+  margin: auto
