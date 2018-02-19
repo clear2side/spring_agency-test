@@ -1,26 +1,13 @@
-html 
-  font-size: 16px
-  @include desktop 
-    font-size: 16px
-  @include laptop 
-    font-size: 15px
-  @include tablet
-    font-size: 14px
-  @include phone
-    font-size: 13px
-
 .container
-  width: 1215px
+  width: 950px
   margin: auto
-  @include desktop 
-    width: rem(992px)
+  position: relative
   @include laptop 
-    width: rem(767px)
+    width: 730px
   @include tablet
-    width: 100%
-    padding: 0 30px
-  @include phone
-    width: 100%
+    width: 90%
+  @include mobile
+    width: 95%
 
 i
   font-style: normal
@@ -39,6 +26,15 @@ b
   font-family: arial
   font-size: 10px
   line-height: 18px
+  @include laptop
+    font-size: 11px
+  @include tablet
+    font-size: 12px
+  @include mobile
+    font-size: 14px
 
-.content__wrapper
-  @include clearfix
+.section__main
+  .container
+    @include clearfix
+
+.convex-shadow

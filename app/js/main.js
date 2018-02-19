@@ -1,8 +1,9 @@
-var headerMenu = document.getElementsByClassName('header__menu--item');
+var headerMenu = document.getElementsByClassName('site-nav--item');
 headerMenu[0].classList.add('active');
 
-$('.header__menu--item').on('click', function(){
+$('.site-nav--item').on('click', function(){
   if (! $(this).hasClass('active') ) {
-    $(this).addClass('active').siblings().removeClass('active')
+    $(this).addClass('active').siblings().removeClass('active');
+    $(this).children('a').css('color: white');
   }
 })

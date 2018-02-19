@@ -1,0 +1,27 @@
+.map__site__nav
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px dotted $c-dotted
+  padding: 11px 7px;
+  @include mobile
+    flex-direction: column
+  .site-nav--list
+    width: 273px
+    margin: inherit
+    @include mobile
+      margin-top: 10px
+      .site-nav--link
+        font-size: 12px
+        
+
+.copyright
+  text-transform: uppercase
+  color: #787878
+  text-align: center
+  font-size: 10px
+  padding-top: 10px
+  line-height: 18px
+
+.map__site__nav
+  .site-nav--list
+    width: auto

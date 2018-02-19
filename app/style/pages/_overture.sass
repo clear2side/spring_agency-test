@@ -1,12 +1,18 @@
 .main__img
   position: relative
-  height: 435px
+  height: 437px
   padding-top: 90px
   border-top: 3px solid $c-cyan
+  border-bottom: 3px solid $c-cyan
   background-image: url('./../../img/main-img.png')
   background-repeat: no-repeat
   background-size: cover
   z-index: 1
+  @include tablet
+    height: 380px
+    padding-top: 40px
+  @include mobile
+    padding-top: 20px
 
 .main__img__title-wrap
   display: flex
@@ -25,10 +31,17 @@
   font-size: 60px
   padding: 5px 30px
   margin-bottom: 20px
+  @include tablet
+    font-size: 50px
 
 .main__img--title__second
   font-size: 30px
   padding: 5px
+  @include tablet
+    font-size: 25px
+
+.people--list--wrap
+  overflow-x: scroll
 
 .main__img__people--list
   display: flex
@@ -41,12 +54,25 @@
   padding-left: 33px
   padding-right: 20px
   background-color: rgba(black, .5)
+  @include laptop
+    padding-right: 0
+  @include tablet
+    display: inline-block
+    height: auto
 
 .main__img__people--item
   position: relative
   height: 69px
   width: 154px
   background-color: #fff
+  @include laptop
+    width: 137px
+  @include tablet
+    display: inline-block;
+    width: 40%;
+    margin: 10px 4%;
+    vertical-align: middle;
+    padding: 0px;
 
 .main__img__people--item__img,
 .main__img__people--item__text
@@ -74,3 +100,6 @@
   p:last-child
     font-style: normal
     font-weight: 400
+  @include laptop
+    margin: 9px 3px 0 40px;
+    line-height: 1.3;

@@ -1,2 +1,10 @@
 footer.footer
-  .header__logo
+  .container
+    .map__site__nav
+      .logo 
+        <b>poz</b><i>nan</i><b>- city</b><i>2</i><b>live</b>
+      ul.site-nav--list        
+        each menuItem in ['home','product','services','contact']
+          li.site-nav--item
+            a(href="#").site-nav--link= menuItem
+    .copyright all rights reserved 2013 

@@ -1,11 +1,13 @@
-.content-main
-  width: calc(100% - 232px)
-  padding-right: 27px
+.main--content
+  width: calc(100% - 200px)
   float: left
   border-top: 3px solid $c-cyan
+  @include tablet
+    width: 100%
+    float: none
   
 .user
-  transform: translateY(-9px)
+  transform: translateY(-12px)
   background: white
   border-top: 3px solid $c-cyan
   border-bottom: 1px dotted $c-dotted
@@ -13,6 +15,8 @@
   position: relative
   padding: 25px 0 23px 14px
   z-index: 2
+  @include tablet
+    border-top: none
 
 .user-info
   position: relative
@@ -27,10 +31,18 @@
 
 .user-info__ava
   width: 110px
+  @include mobile
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-bottom: 10px    
 
 .user-info__more
   width: calc(100% - 110px)
   padding-left: 28px
+  @include mobile
+    width: 100%
+    padding: 0 15px
 
 .user-info__ava--date, .user-info__ava--name
   display: flex
@@ -112,24 +124,34 @@
 .news
   padding: 10px 0 35px 13px
   border-bottom: 1px dotted $c-dotted
+  @include tablet
+    padding: 0
 
 .news--list
   display: flex
   justify-content: space-between
+  @include tablet
+    flex-direction: column
 
 .news--item
   width: calc(50% - 5px)
+  @include tablet
+    width: 100%
+    margin-bottom: 10px
 
 .news--item__content
   display: flex
-  height: 100%
+  height: calc(100% - 31px)
   flex-direction: column
   background-color: #eaeaea
   padding: 27px 67px 0px 30px
-  border-radius: 15px 0 0 0 
+  border-radius: 15px 0 0 0
+  @include tablet
+    padding: 27px 17px 0px 30px
 
 .news__head
   padding-right: 50px
+  margin-bottom: 10px
 
 .news--item__content--title
   line-height: .99
@@ -150,7 +172,11 @@
 .news--item--link
   font-size: 10px
   color: $c-blue
-  &:hover
+  @include tablet
+    margin-top: 5px
+    font-size: 14px
+  @include mobile
+    font-size: 16px
 
 .news--item__reviews
   display: flex
@@ -159,7 +185,6 @@
   background-color: #f4f3f3
   padding-right: 13px
   height: 31px
-  margin-top: -9px
   button
     display: inline-block
     margin-left: 13px
@@ -183,7 +208,7 @@
 .news__add
   display: flex
   height: 81px
-  margin-top: 50px
+  margin-top: 31px
   background-color: #eaeaea
 
 .news__add--content

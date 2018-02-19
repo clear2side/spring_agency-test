@@ -2,9 +2,11 @@ extends ./modules/_head
 block variables
   - var title = 'Home page'
 block content
-  .content__wrapper
-    include ./modules/_header
-    include ./modules/_main-img
-    include ./modules/_aside
-    include ./modules/_content-main
+  include ./modules/_header
+  include ./modules/_overture
+  .section__main
+    .container
+      include ./modules/_aside
+      include ./modules/_content
+  include ./modules/_map
   include ./modules/_footer

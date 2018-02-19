@@ -32,7 +32,7 @@ $c-dotted: #d5d5d5;
   }
 }
 
-@mixin phone {
+@mixin mobile {
   @media (max-width: 480px) {
     @content;
   }
@@ -46,7 +46,7 @@ $c-dotted: #d5d5d5;
 //     font-size: 15px
 //   @include tablet 
 //     font-size: 14px
-//   @include phone
+//   @include mobile
 //     font-size: 13px
 
 
