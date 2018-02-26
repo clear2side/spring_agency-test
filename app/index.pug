@@ -1,0 +1,14 @@
+extends ./temp/modules/_head
+
+block variables
+  - var title = 'Home page'
+  
+block content
+  include ./temp/_header
+  include ./temp/_overture
+  .section__main
+    .container
+      include ./temp/_aside
+      include ./temp/_content
+  include ./temp/_map
+  include ./temp/_footer

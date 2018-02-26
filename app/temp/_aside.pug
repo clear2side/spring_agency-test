@@ -1,3 +1,5 @@
+include modules/_mixin
+
 .aside
   .about__author
     .title.about__author--title about author
@@ -8,7 +10,7 @@
       each post in posts
         li.related__post--item
           .related__post--item__img
-            img(src="./../../img/" + post.image + ".png", alt="")
+            img(src="./img/" + post.image + ".png", alt="")
           .related__past--item__content
             .related__past--item__content--title= post.title
             a.related__past--item__content__comment
